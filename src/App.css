@@ -1,0 +1,32 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  border: solid gray;
+}
+
+.Buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.Display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  width: 330px;
+  border-radius: 7px;
+  height: 80px;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
