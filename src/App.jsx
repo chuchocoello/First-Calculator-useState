@@ -5,12 +5,12 @@ function App() {
   const colors = ['#8B8C7A', '#6C4675', '#6A5D4D', '#FDF4E3', '#3F888F', '#1E213D', '#828282', '#2A6478']
   const [count, setCount] = useState(0)
   const [color, setColorCount] = useState('#8A9597')
-  
+  const [onOff, setonOff] = useState(true)  
 
   return (
     <div className="App" style={{backgroundColor: `${color}`}}>
       <h1>JCoello Calculator1</h1>
-      <div className="Display">
+      <div className="Display" style={{backgroundColor: `${onOff? 'WHITE' : 'BLACK'}`}}>
       {count.toFixed(2)}
       </div>
       <div className="Buttons">
@@ -22,6 +22,7 @@ function App() {
       <button onClick={() => {setCount(Math.pow(count, 2))}}>x²</button>
       <button onClick={() => {setCount(0)}}>Reset</button>
       <button onClick={() => {setColorCount(colors[Math.floor(Math.random()*colors.length)])}}>color</button>
+      <button onClick={() => {setonOff(!onOff)}}>{onOff? 'APAGAR' : 'PRENDER'}</button>
       </div>
     </div>
   )

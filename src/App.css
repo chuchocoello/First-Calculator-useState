@@ -24,9 +24,15 @@
   height: 80px;
   margin-bottom: 30px;
   font-size: 50px;
+  border: solid black 2px;
 }
 
-h1{
+h1 {
   text-align: center;
   color: white;
+}
+
+button {
+  border-radius: 20px;
+  border: solid black 2px;
 }
