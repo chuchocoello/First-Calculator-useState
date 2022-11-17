@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App" style={{backgroundColor: `${color}`}}>
-      <h1>JCoello Calculator1</h1>
+      <h1>JCoello Counter</h1>
       <div className="Display" style={{backgroundColor: `${onOff? 'WHITE' : 'BLACK'}`}}>
       {count.toFixed(2)}
       </div>
@@ -22,7 +22,7 @@ function App() {
       <button onClick={() => {setCount(Math.pow(count, 2))}}>x²</button>
       <button onClick={() => {setCount(0)}}>Reset</button>
       <button onClick={() => {setColorCount(colors[Math.floor(Math.random()*colors.length)])}}>color</button>
-      <button onClick={() => {setonOff(!onOff)}}>{onOff? 'APAGAR' : 'PRENDER'}</button>
+      <button onClick={() => {setonOff(!onOff) }} >{onOff? 'APAGAR' : 'PRENDER'}</button>
       </div>
     </div>
   )
